@@ -4,7 +4,7 @@
 
 # 1. **GET (화면 출력)**
 
-![1](/Image/0408_1.jpg)
+![1](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1b6ab99a-258d-4294-8fa5-9a204a194835/C1C9AFA8-C066-4129-AD07-BEE484883BE5.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220407%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220407T161245Z&X-Amz-Expires=86400&X-Amz-Signature=30caf8627861689064ea2bbf0778cfc9db6d43073f37d7bf29b8fd27e865eaaf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22C1C9AFA8-C066-4129-AD07-BEE484883BE5.jpeg%22&x-id=GetObject)
 
 
 ### **1-1)**
@@ -41,7 +41,7 @@ Browser는 화면에 출력한다.
 
 # 2. **DB 데이터 가져오기**
 
-![2](/Image/0408_2.jpg)
+![2](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b2daa7aa-8a7e-4629-bf1f-c927a5765f02/8D5D4A96-295D-4B9B-8895-5D17AD202303.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220407%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220407T161300Z&X-Amz-Expires=86400&X-Amz-Signature=4889db4c54a0298ec46cc20e4335f394598da48c2720f9dd593b6e4ecb78d9ca&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%228D5D4A96-295D-4B9B-8895-5D17AD202303.jpeg%22&x-id=GetObject)
 
 ### **2-1)**
 
