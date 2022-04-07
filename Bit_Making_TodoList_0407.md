@@ -4,7 +4,7 @@
 
 # 1. **GET (화면 출력)**
 
-![C1C9AFA8-C066-4129-AD07-BEE484883BE5.jpeg](/Image/0408_1.jpg)
+![1](/Image/0408_1.jpg)
 
 
 ### **1-1)**
@@ -41,7 +41,7 @@ Browser는 화면에 출력한다.
 
 # 2. **DB 데이터 가져오기**
 
-![8D5D4A96-295D-4B9B-8895-5D17AD202303.jpeg](/Image/0408_2.jpg)
+![2](/Image/0408_2.jpg)
 
 ### **2-1)**
 
@@ -64,14 +64,14 @@ Model(DAO)는 DB에 연결하여 SQL 문장을 통해 데이터를 가져온다.
 **→ 이때 코드에서 필요한 것!**
 
 ```sql
-**1. Connection** 
+1. Connection
  - Driver가 만들어 주는 것으로, 드라이버 설치 필요 
  - 자주 써주니까 Util 패키지 - enum 클래스의 Instance 로 만들어 준다)
 
-**2. PreparedStatement**
+2. PreparedStatement
  - executeQuery() 메소드를 통해 결과 데이터를 ResultSet 객체에 담아 가져온다.
 
-**3. ResultSet**
+3. ResultSet
  - next() 메소드를 통해 테이블 한 줄씩 읽어서 List<Todo>로 만든다. (DTO 타입의 List 배열) 
 ```
 
