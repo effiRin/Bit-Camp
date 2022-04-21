@@ -7,49 +7,51 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> hello world </h1>
+
     <button class="makeBtn">MAKE</button>
-    <ul class="box">                    
+
+    <ul class="box">
         <li>
             <div>
-                <h2>Sample</h2>
-                <button class="btn">AAA</button>
-                <button class="delBtn">BBB</button>
+                <h2>Sample1</h2>
+                <button class="btn">A버튼</button>
+                <button class="delBtn">삭제</button>
             </div>
         </li>
     </ul>
+<script>
 
-    <script>
-        document.querySelector(".makeBtn").addEventListener("click",(e)=>{
+    document.querySelector(".makeBtn").addEventListener("click",(e)=> {
+        const box = document.querySelector(".box")
+        const str = box.innerHTML
 
-            const box = document.querySelector(".box")
-            const str = box.innerHTML
+        box.innerHTML = box.innerHTML + str
+    }, false)
 
-            box.innerHTML += str
+    document.querySelector(".box").addEventListener("click", (e)=> {
+        e.preventDefault()
+        e.stopPropagation()
 
-        },false)
+        const target = e.target
 
-        document.querySelector(".box").addEventListener("click",(e)=>{
+        if(target.getAttribute("class") === 'btn'){
+        console.log("button click")
 
-            e.preventDefault()
-            e.stopPropagation()
-            
-            const target = e.target
+        const targetDiv = target.closest("div")
+        const targetH2 = targetDiv.querySelector("h2")
+        
+        targetH2.innerHTML = new Date().toString()
 
-            if(target.getAttribute("class") === 'btn'){
-                console.log("button clicked")
+        console.log(targetDiv.innerHTML)
+        console.log(targetH2.innerHTML)
 
-                const targetDiv = target.closest("div")
-                const targetH2 = targetDiv.querySelector("h2")
-                targetH2.innerHTML = new Date().toString()
-
-            }else if(target.getAttribute("class")  === 'delBtn'){
-                const targetLi = target.closest("li")
-                targetLi.remove()
-            }
-
-        },false)
-
-    </script>
+    }   else if(target.getAttribute("class") === 'delBtn'){
+            const targetLi = target.closest("li")
+            targetLi.remove()
+        }
+    },false)
+</script>
 
 </body>
 </html>
