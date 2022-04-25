@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <input type="checkbox" class="total"> 전체선택
+        </li>
+
+        <li>
+            <input type="checkbox"> AAAA
+        </li>
+        <li>
+            <input type="checkbox"> BBBB
+        </li>
+        <li>
+            <input type="checkbox"> CCCC
+        </li>
+        <li>
+            <input type="checkbox"> DDDD
+        </li>
+        <li>
+            <input type="checkbox"> EEEE
+        </li>
+    </ul>
+
+    <script>
+        document.querySelector(".total").addEventListener("change", (e) => {
+            const target = e.target
+            const parent = target.closest("ul")       
+            const lis = parent.querySelectorAll("li > input")   
+            console.log(lis)
+
+            if (target.checked) {
+
+                lis.forEach(element => { 
+                    element.checked = true 
+                });
+
+            } else {
+                lis.forEach(element => { 
+                    element.checked = false 
+                });
+
+            }
+
+        }, false)
+
+    </script>
+
+</body>
+</html>
